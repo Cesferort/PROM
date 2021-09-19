@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btPestTabHost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pestañas con TabHost"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:onClick="pestanas_TabHost"/>
+    <Button
+        android:id="@+id/btPestFragmentTabHost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pestañas con FragmentTabHost"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:onClick="pestanas_FragmentTabHost"/>
+
+
+    <Button
+        android:id="@+id/btTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pestañas con TabLayout"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:onClick="pestana_TabLayout"/>
+
+    <Button
+        android:id="@+id/btViewHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ejemplo ActionBar"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:onClick="ejActionBar"/>
+
+
+  <!--  <Button
+        android:id="@+id/btListViewPersonal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pestañas con FrameTabHost"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:onClick="pestana_FrameTabHost"/>
+
+
+
+    <Button
+        android:id="@+id/btGridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ejemplo GridView"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:onClick="ejGridView"/>
+
+    <Button
+        android:id="@+id/btIntents"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ejemplo Intents"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:onClick="ejIntents"/>
+    -->
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/butAct_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="ACTIVIDAD 01"
+        android:onClick="listenerActividades"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/butAct_02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ACTIVIDAD 02"
+        android:onClick="listenerActividades"
+        app:layout_constraintStart_toStartOf="@+id/butAct_01"
+        app:layout_constraintTop_toBottomOf="@+id/butAct_01" />
+
+    <Button
+        android:id="@+id/butAct_03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ACTIVIDAD 03"
+        android:onClick="listenerActividades"
+        app:layout_constraintStart_toStartOf="@+id/butAct_01"
+        app:layout_constraintTop_toBottomOf="@+id/butAct_02" />
+
+    <Button
+        android:id="@+id/butAct_04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ACTIVIDAD 04"
+        android:onClick="listenerActividades"
+        app:layout_constraintStart_toStartOf="@+id/butAct_01"
+        app:layout_constraintTop_toBottomOf="@+id/butAct_03" />
+
+    <Button
+        android:id="@+id/butSalir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SALIR"
+        android:onClick="listenerButSalir"
+        app:layout_constraintStart_toStartOf="@+id/butAct_04"
+        app:layout_constraintTop_toBottomOf="@+id/butAct_04" />
+</androidx.constraintlayout.widget.ConstraintLayout>

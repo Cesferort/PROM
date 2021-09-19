@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_opc1"
+        android:title="@string/opc1"
+        android:icon="@drawable/ic_nuevo"
+        android:orderInCategory="23"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_opc2"
+        android:title="@string/opc2"
+        android:icon="@drawable/ic_buscar"
+        android:orderInCategory="15"
+        app:showAsAction="withText|ifRoom" />
+    <item
+        android:id="@+id/action_opc3"
+        android:title="@string/opc3"
+        android:orderInCategory="2"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_opc4"
+        android:title="@string/opc4"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+</menu>

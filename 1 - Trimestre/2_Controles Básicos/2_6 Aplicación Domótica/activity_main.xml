@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgLuz2"
+        android:layout_width="53dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toEndOf="@+id/imgCam2"
+        app:layout_constraintTop_toTopOf="@+id/imgCam2"
+        app:srcCompat="@drawable/bombilla_apagada" />
+
+    <ImageView
+        android:id="@+id/imgCam2"
+        android:layout_width="53dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="10dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/imgLuz1"
+        app:layout_constraintTop_toTopOf="@+id/imgLuz1"
+        app:srcCompat="@drawable/camara" />
+
+    <ImageView
+        android:id="@+id/imgLuz1"
+        android:layout_width="53dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toEndOf="@+id/imgCam1"
+        app:layout_constraintTop_toTopOf="@+id/imgCam1"
+        app:srcCompat="@drawable/bombilla_apagada" />
+
+    <ToggleButton
+        android:id="@+id/toggleLuz2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOn="Sí"
+        android:textOff="No"
+        android:onClick="togLuz2Listener"
+        app:layout_constraintBottom_toBottomOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="@+id/toggleCam2"
+        app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Cámara 2:"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Luz 2:"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Cámara 1:"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Luz 1:"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Switch
+        android:id="@+id/swiCam1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:onClick="swiCam1Listener"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="@+id/textView2" />
+
+    <Switch
+        android:id="@+id/swiLuz1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="swiLuz1Listener"
+        app:layout_constraintStart_toStartOf="@+id/swiCam1"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
+
+    <ToggleButton
+        android:id="@+id/toggleCam2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOn="Sí"
+        android:textOff="No"
+        android:onClick="togCam2Listener"
+        app:layout_constraintBottom_toBottomOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="@+id/swiLuz1"
+        app:layout_constraintTop_toTopOf="@+id/textView3" />
+
+    <ImageView
+        android:id="@+id/imgCam1"
+        android:layout_width="53dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="40dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:srcCompat="@drawable/camara" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

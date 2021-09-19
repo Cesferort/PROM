@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ListView
+        android:id="@+id/lvLibros"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="60dp"
+        android:background="#C4F8F2"
+        app:layout_constraintBottom_toTopOf="@+id/etIdLibro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ListView>
+
+    <Button
+        android:id="@+id/butBorrar"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:text="Borrar"
+        android:onClick="listenerButBorrar"
+        app:layout_constraintBottom_toTopOf="@+id/etIdLibro"
+        app:layout_constraintEnd_toEndOf="@+id/lvLibros"
+        app:layout_constraintTop_toBottomOf="@+id/lvLibros" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Identificador:"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/etIdLibro"
+        app:layout_constraintStart_toStartOf="@+id/butCambiarModo"
+        app:layout_constraintTop_toTopOf="@+id/etIdLibro"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/etIdLibro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/etNomLibro"
+        app:layout_constraintEnd_toEndOf="@+id/butGuardar"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre:"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/etNomLibro"
+        app:layout_constraintStart_toStartOf="@+id/butCambiarModo"
+        app:layout_constraintTop_toTopOf="@+id/etNomLibro" />
+
+    <EditText
+        android:id="@+id/etNomLibro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/etEditorial"
+        app:layout_constraintEnd_toEndOf="@+id/butGuardar"
+        app:layout_constraintStart_toEndOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Editorial:"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/etEditorial"
+        app:layout_constraintStart_toStartOf="@+id/butCambiarModo"
+        app:layout_constraintTop_toTopOf="@+id/etEditorial" />
+
+    <EditText
+        android:id="@+id/etEditorial"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/spinOwner"
+        app:layout_constraintEnd_toEndOf="@+id/butGuardar"
+        app:layout_constraintStart_toEndOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Propietario:"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/spinOwner"
+        app:layout_constraintStart_toStartOf="@+id/butCambiarModo"
+        app:layout_constraintTop_toTopOf="@+id/spinOwner" />
+
+    <Spinner
+        android:id="@+id/spinOwner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="40dp"
+        android:background="#B8B6B6"
+        app:layout_constraintBottom_toTopOf="@+id/butGuardar"
+        app:layout_constraintEnd_toEndOf="@+id/butGuardar"
+        app:layout_constraintStart_toEndOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/butCambiarModo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="10dp"
+        android:text="Cambiar a Modo Inserción"
+        android:onClick="listenerButCambiarModo"
+        app:layout_constraintBottom_toBottomOf="@+id/butGuardar"
+        app:layout_constraintEnd_toStartOf="@+id/butGuardar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/butGuardar" />
+
+    <Button
+        android:id="@+id/butGuardar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Guardar"
+        android:onClick="listenerButGuardar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

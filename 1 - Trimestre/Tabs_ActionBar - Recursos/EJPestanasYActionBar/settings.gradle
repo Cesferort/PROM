@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "EJ Pestana varias opciones"

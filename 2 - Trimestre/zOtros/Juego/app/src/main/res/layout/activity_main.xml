@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingTop="15dp" >
+    <TextView
+        android:id="@+id/textpuntos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="35dp"
+        android:text="@string/nombre"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="35sp"
+        android:textColor="#ffffff" />
+    <Button
+        android:id="@+id/btJugar"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:onClick="jugar"
+        android:text="Jugar"
+        android:textSize="30sp"
+        android:textColor="#1642b2"
+        />
+    <Button
+        android:id="@+id/btAyuda"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:onClick="ayuda"
+        android:text="Ayuda"
+        android:textSize="20sp" />
+    <Button
+        android:id="@+id/btPuntuaciones"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:onClick="mostrar"
+        android:text="Puntuaciones"
+        android:textSize="20sp" />
+    <Button
+        android:id="@+id/btResetear"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:onClick="resetear"
+        android:text="Resetear"
+        android:textSize="20sp" />
+    <Button
+        android:id="@+id/btSalir"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:onClick="salir"
+        android:text="Salir"
+        android:textSize="20sp" />
+</LinearLayout>

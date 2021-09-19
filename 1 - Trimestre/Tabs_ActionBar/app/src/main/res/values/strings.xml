@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Tabs_ActionBar</string>
+    <string name="contenido_tab_1">Contenido Tab 1</string>
+    <string name="contenido_tab_3">Contenido Tab 3</string>
+    <string name="contenido_tab_2">Contenido Tab 2</string>
+    <string name="mnItem_Buscador_Title">Buscador</string>
+    <string name="mnItem_NuevoGrupo_Title">Nuevo grupo</string>
+    <string name="mnItem_NuevaDifusion_Title">Nueva Difusión</string>
+    <string name="mnItem_WhatsWeb_Title">WhatsApp Web</string>
+    <string name="mnItem_MsnDestacados_Title">Mensajes Destacados</string>
+    <string name="mnItem_Ajustes_Title">Ajustes</string>
+    <string name="mnItem_PrivEstados_Title">Privacidad de estados</string>
+    <string name="mnItem_BorrarLlamadas_Title">Borrar registro de llamadas</string>
+</resources>
