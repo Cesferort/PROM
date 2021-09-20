@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityBDNuevoLibro">
+
+    <TextView
+        android:id="@+id/tvTitulo_bdnuevo_libro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/activity_bdnuevo_libro_tvTitulo"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTituloLibro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/activity_bdnuevo_libro_tvTituloLibro"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitulo_bdnuevo_libro" />
+
+    <EditText
+        android:id="@+id/txtTituloLibro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTituloLibro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/tvTituloLibro"
+        app:layout_constraintTop_toTopOf="@+id/tvTituloLibro"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvAutor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/activity_bdnuevo_libro_tvAutor"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTituloLibro" />
+
+    <EditText
+        android:id="@+id/txtAutorLibro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/tvAutor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvAutor"
+        app:layout_constraintTop_toTopOf="@+id/tvAutor" />
+
+    <TextView
+        android:id="@+id/tvIsbn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/activity_bdnuevo_libro_tvIsbn"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAutor" />
+
+    <EditText
+        android:id="@+id/txtIsbnLibro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/tvIsbn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvIsbn"
+        app:layout_constraintTop_toTopOf="@+id/tvIsbn" />
+
+    <TextView
+        android:id="@+id/tvEditorial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/activity_bdnuevo_libro_tvEditorial"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvIsbn" />
+
+    <EditText
+        android:id="@+id/txtEditorialLibro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/tvEditorial"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvEditorial"
+        app:layout_constraintTop_toTopOf="@+id/tvEditorial" />
+
+    <TextView
+        android:id="@+id/tvNumPag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/activity_bdnuevo_libro_tvNumPag"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvEditorial" />
+
+    <EditText
+        android:id="@+id/txtNumPagLibro"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/tvNumPag"
+        app:layout_constraintStart_toEndOf="@+id/tvNumPag"
+        app:layout_constraintTop_toTopOf="@+id/tvNumPag" />
+
+    <CheckBox
+        android:id="@+id/checkLeido"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/activity_bdnuevo_libro_checkLeido"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/txtNumPagLibro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtNumPagLibro"
+        app:layout_constraintTop_toTopOf="@+id/txtNumPagLibro" />
+
+    <Button
+        android:id="@+id/butInsertarLibro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="10dp"
+        android:onClick="listener_butInsertarLibro"
+        android:text="@string/activity_bdnuevo_libro_butInsertarLibro"
+        app:layout_constraintEnd_toStartOf="@+id/butCancelarLibro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNumPag" />
+
+    <Button
+        android:id="@+id/butCancelarLibro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="@string/activity_bdnuevo_libro_butCancelarLibro"
+        android:onClick="listener_butCancelarLibro"
+        app:layout_constraintBottom_toBottomOf="@+id/butInsertarLibro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/butSalir_bdnuevo_libro"
+        app:layout_constraintTop_toTopOf="@+id/butInsertarLibro" />
+
+    <Button
+        android:id="@+id/butSalir_bdnuevo_libro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/activity_bdnuevo_libro_butSalir_bdnuevo_libro"
+        android:textSize="34sp"
+        android:onClick="listener_butSalir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

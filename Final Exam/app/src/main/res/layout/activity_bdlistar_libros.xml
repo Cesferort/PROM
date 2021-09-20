@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityBDListarLibros">
+
+    <TextView
+        android:id="@+id/tvTitulo_bdlistar_libros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/activity_bdlistar_libros_tvTitulo"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupLeido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:checkedButton="@id/radButLeido3"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitulo_bdlistar_libros">
+
+        <RadioButton
+            android:id="@+id/radButLeido1"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="@string/activity_bdlistar_libros_radButLeido1"
+            android:visibility="visible"
+            android:onClick="listener_radButLeido"/>
+
+        <RadioButton
+            android:id="@+id/radButLeido2"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="@string/activity_bdlistar_libros_radButLeido2"
+            android:visibility="visible"
+            android:onClick="listener_radButLeido"/>
+
+        <RadioButton
+            android:id="@+id/radButLeido3"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="@string/activity_bdlistar_libros_radButLeido3"
+            android:visibility="visible"
+            android:onClick="listener_radButLeido"/>
+    </RadioGroup>
+
+    <ListView
+        android:id="@+id/lvLibros"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="#7A7A7A"
+        app:layout_constraintBottom_toTopOf="@+id/butVolver_bdlistar_libros"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupLeido" />
+
+    <Button
+        android:id="@+id/butVolver_bdlistar_libros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/activity_bdlistar_libros_butVolver"
+        android:onClick="listener_butVolver_bdlistar_libros"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

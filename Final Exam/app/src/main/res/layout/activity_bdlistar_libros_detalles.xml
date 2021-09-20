@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityBDListarLibros_Detalles">
+
+    <TextView
+        android:id="@+id/tvTitulo_bdlistar_libros_detalles"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center_horizontal"
+        android:text="@string/activity_bdlistar_libros_detalles_tvTitulo"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTituloLibro_bdlistar_libros_detalles"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="TextView"
+        android:textColor="#00288C"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvTitulo_bdlistar_libros_detalles"
+        app:layout_constraintStart_toStartOf="@+id/tvTitulo_bdlistar_libros_detalles"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitulo_bdlistar_libros_detalles" />
+
+    <TextView
+        android:id="@+id/tvAutor_bdlistar_libros_detalles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTituloLibro_bdlistar_libros_detalles" />
+
+    <TextView
+        android:id="@+id/tvIsbn_bdlistar_libros_detalles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAutor_bdlistar_libros_detalles" />
+
+    <TextView
+        android:id="@+id/tvEditorial_bdlistar_libros_detalles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvIsbn_bdlistar_libros_detalles" />
+
+    <TextView
+        android:id="@+id/tvNumPag_bdlistar_libros_detalles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/activity_bdlistar_libros_detalles_tvNumPag"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvEditorial_bdlistar_libros_detalles" />
+
+    <TextView
+        android:id="@+id/tvLeido_bdlistar_libros_detalles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/activity_bdlistar_libros_detalles_tvLeido_true"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvNumPag_bdlistar_libros_detalles"
+        app:layout_constraintTop_toTopOf="@+id/tvNumPag_bdlistar_libros_detalles" />
+
+    <Button
+        android:id="@+id/butEliminar_bdlistar_libros_detalles"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/activity_bdlistar_libros_detalles_butEliminar"
+        android:onClick="listener_butEliminar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/butCancelar_bdlistar_libros_detalles"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/butCancelar_bdlistar_libros_detalles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/activity_bdlistar_libros_detalles_butCancelar"
+        android:onClick="listener_butCancelar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
