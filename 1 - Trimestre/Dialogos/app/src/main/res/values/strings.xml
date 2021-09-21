@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Dialogos</string>
+    <string name="activity_main_txtViewNomUsuario">Nombre de usuario</string>
+    <string name="activity_main_txtViewPassword">Contraseña</string>
+    <string name="activity_main_butIniciar">Iniciar Sesión</string>
+    <string name="MainActivity_notificacion_title">Tu inicio de sesión fue correcto</string>
+    <string name="MainActivity_notificacion_text">Ahora puedes utilizar las funcionalidades de la aplicación.</string>
+    <string name="mnItem_Buscador_Title">Buscador</string>
+    <string name="mnItem_NuevoGrupo_Title">Nuevo grupo</string>
+    <string name="mnItem_NuevaDifusion_Title">Nueva difusión</string>
+    <string name="mnItem_WhatsWeb_Title" translatable="false">WhatsApp Web</string>
+    <string name="mnItem_MsnDestacados_Title">Mensajes destacados</string>
+    <string name="mnItem_Ajustes_Title">Ajustes</string>
+    <string name="mnItem_PrivEstados_Title">Privacidad de estados</string>
+    <string name="mnItem_BorrarLlamadas_Title">Borrar registro de llamadas</string>
+    <string name="dialog_inicio_message">No se ha podido iniciar sesión. Vuelve a intentarlo.</string>
+    <string name="dialog_inicio_positiveBut">De acuerdo</string>
+    <string name="dialog_inicio_title">Los datos son incorrectos</string>
+    <string name="WhatsAppActivity_tabs_mitab1">Chats</string>
+    <string name="WhatsAppActivity_tabs_mitab2">Estados</string>
+    <string name="WhatsAppActivity_tabs_mitab3">Llamadas</string>
+    <string name="WhatsAppActivity_toolbar_bienvenido">"Bienvenido "</string>
+    <string name="Dialog_Atras_message">¿Deseas cerrar la aplicación?</string>
+    <string name="Dialog_Atras_title">Confirmación</string>
+    <string name="Dialog_Atras_positiveBut">Sí</string>
+    <string name="Dialog_Atras_negativeBut">No</string>
+</resources>

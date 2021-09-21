@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Dialogs</string>
+    <string name="activity_main_txtViewNomUsuario">Username</string>
+    <string name="activity_main_txtViewPassword">Password</string>
+    <string name="activity_main_butIniciar">Log In</string>
+    <string name="MainActivity_notificacion_title">Your login was successful</string>
+    <string name="MainActivity_notificacion_text">Now you can use the functionalities of the application.</string>
+    <string name="mnItem_Buscador_Title">Search tool</string>
+    <string name="mnItem_NuevoGrupo_Title">New group</string>
+    <string name="mnItem_NuevaDifusion_Title">New diffusion</string>
+    <string name="mnItem_MsnDestacados_Title">Featured messages</string>
+    <string name="mnItem_Ajustes_Title">Settings</string>
+    <string name="mnItem_PrivEstados_Title">Status privacy</string>
+    <string name="mnItem_BorrarLlamadas_Title">Delete call log</string>
+    <string name="dialog_inicio_positiveBut">OK</string>
+    <string name="dialog_inicio_message">Unable to log in. Please try again.</string>
+    <string name="dialog_inicio_title">The data is incorrect</string>
+    <string name="WhatsAppActivity_tabs_mitab1">Chats</string>
+    <string name="WhatsAppActivity_tabs_mitab2">Status</string>
+    <string name="WhatsAppActivity_tabs_mitab3">Calls</string>
+    <string name="WhatsAppActivity_toolbar_bienvenido">"Welcome "</string>
+    <string name="Dialog_Atras_positiveBut">Yes</string>
+    <string name="Dialog_Atras_negativeBut">No</string>
+    <string name="Dialog_Atras_message">Do you want to exit the app?</string>
+    <string name="Dialog_Atras_title">Confirmation</string>
+</resources>

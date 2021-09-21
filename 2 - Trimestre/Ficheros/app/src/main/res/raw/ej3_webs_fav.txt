@@ -1,0 +1,5 @@
+Bing; http://www.bing.com; bing; 1;
+Yahoo; http://www.yahoo.com; yahoo; 2;
+Google; http://www.google.com; google; 3;
+Bing-es; http://www.bing.es; bing; 4;
+Yahoo-es; http://www.yahoo.es; yahoo; 5;

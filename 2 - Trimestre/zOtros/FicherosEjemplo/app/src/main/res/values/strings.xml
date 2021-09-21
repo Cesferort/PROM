@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Ficheros - Ejemplo</string>
+    <string name="et_Presentacion">Ejemplo acceso a ficheros</string>
+    <string name="btn_w_fichero">Escribir Fichero</string>
+    <string name="btn_r_fichero">Leer Fichero</string>
+    <string name="btn_r_Recurso">Leer Recurso</string>
+    <string name="btn_w_memoriaSD">Escribir SD</string>
+    <string name="btn_r_memoriaSD">Leer SD</string>
+    <string name="lbl_cabecera">El contenido del fichero es:</string>
+</resources>
