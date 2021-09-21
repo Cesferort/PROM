@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityBDBuscarLibros">
+
+    <TextView
+        android:id="@+id/tvTitulo_bdbuscar_libros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/activity_bdbuscar_libros_tvTitulo"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSubtítulo_bdbuscar_libros"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/activity_bdbuscar_libros_tvSubtítulo"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitulo_bdbuscar_libros" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupBuscar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/tvSubtítulo_bdbuscar_libros"
+        app:layout_constraintStart_toStartOf="@+id/tvSubtítulo_bdbuscar_libros"
+        app:layout_constraintTop_toBottomOf="@+id/tvSubtítulo_bdbuscar_libros">
+
+        <RadioButton
+            android:id="@+id/radButBuscar1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_bdbuscar_libros_radButBuscar1"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:onClick="listener_radButBuscar"/>
+
+        <RadioButton
+            android:id="@+id/radButBuscar2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_bdbuscar_libros_radButBuscar2"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:onClick="listener_radButBuscar"/>
+
+        <RadioButton
+            android:id="@+id/radButBuscar3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_bdbuscar_libros_radButBuscar3"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:onClick="listener_radButBuscar"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvOpcionElegida_bdbuscar_libros"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupBuscar" />
+
+    <EditText
+        android:id="@+id/txtBusquedaLibro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvOpcionElegida_bdbuscar_libros"
+        app:layout_constraintStart_toStartOf="@+id/tvOpcionElegida_bdbuscar_libros"
+        app:layout_constraintTop_toBottomOf="@+id/tvOpcionElegida_bdbuscar_libros" />
+
+    <Button
+        android:id="@+id/butBuscar_bdbuscar_libros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:onClick="listener_butBuscar"
+        android:text="@string/activity_bdbuscar_libros_butBuscar"
+        app:layout_constraintEnd_toEndOf="@+id/tvOpcionElegida_bdbuscar_libros"
+        app:layout_constraintTop_toBottomOf="@+id/txtBusquedaLibro" />
+
+    <Button
+        android:id="@+id/butVolver_bdbuscar_libros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/activity_bdbuscar_libros_butVolver"
+        android:onClick="listener_butVolver_bdbuscar_libros"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
