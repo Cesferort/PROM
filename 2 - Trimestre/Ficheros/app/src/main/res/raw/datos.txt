@@ -1,7 +1,0 @@
-Soy el archivo externo de prueba.
-Linea2
-Linea3
-
-Linea5
-dsaaaaaaaaaaaaaaaasadsadasdasdas
-dsadsadas

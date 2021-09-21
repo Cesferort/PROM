@@ -1,2 +1,0 @@
-include ':app'
-rootProject.name = "Seleccion e Intents Ej2"
